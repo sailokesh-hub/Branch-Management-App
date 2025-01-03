@@ -31,7 +31,7 @@ const Login = () => {
 
     try {
         // Use POST for sending login data
-        const response = await axios.post("http://localhost:3001/api/users/login", {
+        const response = await axios.post("https://branch-management-app-1.onrender.com/api/users/login", {
             email,
             password,
         });

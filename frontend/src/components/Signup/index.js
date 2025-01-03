@@ -20,7 +20,7 @@ const Signup = () => {
     const options = { username, email, password };
 
     try {
-        const response = await axios.post('http://localhost:3001/api/users/register', options);
+        const response = await axios.post('https://branch-management-app-1.onrender.com/api/users/register', options);
         
         if (response.status === 201) {
             console.log(response.data.message); 
